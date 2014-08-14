@@ -2,7 +2,7 @@
   <div>Name: <%= user.name %></div>
   <div>Email: <%= user.email %></div>
 
-  <%= user.attributes.each do |k, v| %>
+  <% user.user_attributes.each do |k, v| %>
     <div><%= k %>: <%= v %>
   <% end %>
 </li>

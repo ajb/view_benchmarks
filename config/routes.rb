@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
 
-  scope controller: 'erb', path: 'erb', as: 'erb' do
-    get 'users_index'
+  ['erb', 'erector'].each do |x|
+    scope controller: x, path: x, as: x do
+      get 'users_index'
+    end
   end
 
   # The priority is based upon order of creation: first created -> highest priority.
