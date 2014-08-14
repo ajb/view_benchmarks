@@ -1,0 +1,9 @@
+<p>Hi, there are <%= @users.length %> users.</p>
+
+<% if @users.present? %>
+  <ul>
+    <%= render partial: 'user', collection: @users %>
+  </ul>
+<% else %>
+  <p>No users.</p>
+<% end %>
