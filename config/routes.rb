@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  ['erb', 'erector'].each do |x|
+  ['erb', 'erector', 'fortitude'].each do |x|
     scope controller: x, path: x, as: x do
       get 'users_index'
     end

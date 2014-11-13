@@ -28,6 +28,8 @@ gem 'spring',        group: :development
 gem 'ffaker'
 gem 'rails-perftest'
 gem 'ruby-prof'
+gem 'allocation_stats'
+gem 'fortitude'
 gem 'erector-rails4', require: 'erector'
 
 # Use ActiveModel has_secure_password
